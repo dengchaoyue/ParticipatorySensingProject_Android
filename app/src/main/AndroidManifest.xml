@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.elaine.participatorysensingproject_android">
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOC" />
+
+    <permission android:name="android.permission.INSTALL_LOCATION_PROVIDER" />
+
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+    <permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+
+
+    <!-- 授予程序使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <!--唤醒屏幕并解锁权限-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+
+
+    <application
+        android:name="com.example.elaine.participatorysensingproject_android.firstpage.SensingApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="01KLXDXFz7bwOzElcMPOdewaqpuj9Ga1" />
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.firstpage.SplashActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.firstpage.AirQualityActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.usercenterpage.UserCenterPage"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.usercenterpage.APPInformation"
+            android:label="APPInformation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.usercenterpage.UserInformation"
+            android:label="UserInformation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.usercenterpage.UserNotSignedActivity"
+            android:label="UserNotSignedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.usercenterpage.LoginActivity"
+            android:label="LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.usercenterpage.RegisterActivity"
+            android:label="RegisterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.mappage.MapPage"
+            android:label="BaiduMap"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.taskpage.TaskActivity"
+            android:label="Task"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.mappage.PhotoWall"
+            android:label="PhotoWall"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.mappage.singlePicPage"
+            android:label="SinglePicture"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.mappage.cameraDIY"
+            android:label="cameraPage"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.diySystemAlbum.ImgsActivity"
+            android:label="Album"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.diySystemAlbum.ImgFileListActivity"
+            android:label="Album"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.permissionrequest.PermissionsActivity"
+            android:label="Permission"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.AutoCamera.AutoCameraActivity"
+            android:label="autoCameradef"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.AutoCamera.MyAutoCamera"
+            android:label="myautoCamera"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.AutoCamera.AutoPicListPage"
+            android:label="autoPictureList"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.example.elaine.participatorysensingproject_android.AutoCamera.AutoPicListPageTwo"
+            android:label="autoPictureList2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"></service><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+
+        <receiver android:name="com.example.elaine.participatorysensingproject_android.AutoCamera.MyReceiver">
+            <intent-filter>
+                <action android:name="ELITOR_CLOCK" />
+            </intent-filter>
+        </receiver>
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+    </application>
+
+</manifest>

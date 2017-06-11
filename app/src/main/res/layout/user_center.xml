@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.example.elaine.participatorysensingproject_android.Layout.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"></com.example.elaine.participatorysensingproject_android.Layout.TitleLayout>
+
+    <ScrollView
+        android:id="@+id/user_center_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/user_center_linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/user_center_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.example.elaine.participatorysensingproject_android.Layout.MenuLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"></com.example.elaine.participatorysensingproject_android.Layout.MenuLayout>
+
+</RelativeLayout>

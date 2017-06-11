@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="#b000"
+    android:layout_gravity="center">
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:background="@drawable/diy_dialog_shape">
+
+        <TextView
+            android:id="@+id/openCamera"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:gravity="center"
+            android:text="@string/camera"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/diy_dialog_photowall"/>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/openCamera"
+            android:background="@color/diy_dialog_photowall"/>
+
+        <TextView
+            android:id="@+id/openAlbum"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:gravity="center"
+            android:text="@string/album"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/openCamera"
+            android:textColor="@color/diy_dialog_photowall"/>
+    </RelativeLayout>
+</FrameLayout>

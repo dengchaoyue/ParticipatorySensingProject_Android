@@ -1,0 +1,500 @@
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/llayout2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="15%"
+        android:paddingLeft="64dp"
+        android:paddingRight="64dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="空气质量指数："
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="75"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/actual_value_2"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llairQuality"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="25%"
+        android:layout_below="@id/llayout2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="NO₂: 30"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/no2"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="CO: 60"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/co"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="SO₂: 40"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/so2"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="O₃: 50"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/o3"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="PM10: 100"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/pm10"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="PM2.5: 70"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/pm25"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lldate"
+        android:layout_below="@id/llairQuality"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:paddingTop="@dimen/activity_horizontal_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5.20"/>
+
+        <TextView
+            android:id="@+id/date2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5.21"/>
+
+        <TextView
+            android:id="@+id/date3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5.22"/>
+
+        <TextView
+            android:id="@+id/date4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5.23"/>
+
+        <TextView
+            android:id="@+id/date5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5.24"/>
+
+        <TextView
+            android:id="@+id/date6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5.25"/>
+
+        <TextView
+            android:id="@+id/date7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="5.26"/>
+
+
+    </LinearLayout>
+
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart2"
+        android:layout_below="@id/lldate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="25%"
+        android:gravity="center">
+    </com.github.mikephil.charting.charts.LineChart>
+
+    <LinearLayout
+        android:id="@+id/llweatherImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:layout_below="@id/chart2">
+
+        <ImageView
+            android:id="@+id/wea_img1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/wea_img2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/wea_img3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/wea_img4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/wea_img5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/wea_img6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
+
+        <ImageView
+            android:id="@+id/wea_img7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llwindKind"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="5%"
+        android:layout_below="@+id/llweatherImg"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/wind11"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="北风"/>
+
+        <TextView
+            android:id="@+id/wind12"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="北风"/>
+
+        <TextView
+            android:id="@+id/wind13"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="北风"/>
+
+        <TextView
+            android:id="@+id/wind14"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="北风"/>
+
+        <TextView
+            android:id="@+id/wind15"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="北风"/>
+
+        <TextView
+            android:id="@+id/wind16"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="北风"/>
+
+        <TextView
+            android:id="@+id/wind17"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="北风"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llwindLevel"
+        android:layout_below="@id/llwindKind"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="5%">
+
+        <TextView
+            android:id="@+id/wind21"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2级"/>
+
+        <TextView
+            android:id="@+id/wind22"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2级"/>
+
+        <TextView
+            android:id="@+id/wind23"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2级"/>
+
+
+        <TextView
+            android:id="@+id/wind24"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2级"/>
+
+        <TextView
+            android:id="@+id/wind25"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2级"/>
+
+        <TextView
+            android:id="@+id/wind26"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2级"/>
+
+        <TextView
+            android:id="@+id/wind27"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="2级"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llhumidty"
+        android:layout_below="@id/llwindLevel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="5%"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/humi1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="30%"/>
+
+        <TextView
+            android:id="@+id/humi2"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="30%"/>
+
+        <TextView
+            android:id="@+id/humi3"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="30%"/>
+
+        <TextView
+            android:id="@+id/humi4"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="30%"/>
+
+        <TextView
+            android:id="@+id/humi5"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="30%"/>
+
+        <TextView
+            android:id="@+id/humi6"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="30%"/>
+
+        <TextView
+            android:id="@+id/humi7"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="30%"/>
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

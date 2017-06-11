@@ -1,0 +1,202 @@
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/firstPageImg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="75%"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop" />
+
+    <ImageView
+        android:id="@+id/alphaLayer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="75%"
+        android:layout_alignParentTop="true"
+        android:scaleType="centerCrop"
+        android:background="@color/alpha_layer" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="北京"
+        android:id="@+id/location"
+        android:gravity="center"
+        android:textColor="@color/black_ivory"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/llayout1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:layout_below="@id/location"
+        android:gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="西直门"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/station"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:textColor="@color/black_ivory"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="actual_value"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/actual_value_1"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:textColor="@color/black_ivory"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="5%"
+        android:layout_below="@id/llayout1"
+        android:text="time"
+        android:id="@+id/latest_time"
+        android:textColor="@color/black_ivory"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:text="@string/airQualityIndex"
+        android:id="@+id/text_airQualityIndex"
+        android:layout_below="@id/latest_time"
+        android:textColor="@color/black_ivory"
+        android:gravity="center" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:layout_below="@id/text_airQualityIndex"
+        android:text="calculated_value"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/calculated_value"
+        android:textColor="@color/black_ivory"
+        android:gravity="center" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="10%"
+        android:layout_below="@id/calculated_value"
+        android:text="airQuality"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/airQuality"
+        android:textColor="@color/black_ivory"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/lltemperature"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="20%"
+        android:layout_below="@id/airQuality">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/temperature_1"
+                android:text="temper"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/weather_icon"
+                android:gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/weather_1"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:id="@+id/humidity_1"
+                android:text="humidity"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/weather_icon"
+                android:gravity="center"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/chartAndPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_heightPercent="25%"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chart"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+        </com.github.mikephil.charting.charts.LineChart>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="84dp"
+            android:layout_weight="0"
+            android:layout_height="match_parent">
+        </android.support.v4.view.ViewPager>
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

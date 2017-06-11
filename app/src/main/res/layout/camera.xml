@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FrameLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <!-- 显示预览图形 -->
+    <LinearLayout
+        android:id="@+id/surfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"></LinearLayout>
+
+    <ImageView
+        android:id="@+id/fullscreenpic"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp"
+        android:src="@drawable/default_model_pic"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/minipic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:scaleType="fitEnd"
+        android:src="@drawable/default_model_pic"
+        android:visibility="visible" />
+
+    <SeekBar
+        android:id="@+id/zoomSeekBar"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:visibility="visible" />
+
+    <SeekBar
+        android:id="@+id/exposureSeekBar"
+        android:layout_width="10dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="200dp"
+        android:visibility="visible" />
+
+    <!-- 相对布局，放置三个按钮 -->
+    <RelativeLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/re_shoot"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="取消"
+            android:textColor="#3A5FCD"
+            android:textSize="20dp" />
+
+        <!-- 拍照按钮 -->
+        <TextView
+            android:id="@+id/takePhoto"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="140dp"
+            android:background="@drawable/take_photo"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/usephoto"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/re_shoot"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:text="自动拍摄"
+            android:textColor="#3A5FCD"
+            android:textSize="20dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/overlayoutview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"></LinearLayout>
+
+</FrameLayout>

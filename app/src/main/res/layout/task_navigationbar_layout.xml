@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="?android:attr/buttonBarButtonStyle"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/ButtonA"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="top"
+        android:background="@drawable/button_shape_one"
+        android:gravity="center_horizontal"
+        android:text="Tasks Center"
+        android:textColor="#FFFFFF" />
+
+	<Button
+        android:id="@+id/ButtonB"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="top"
+        style="?android:attr/buttonBarButtonStyle"
+        android:background="@drawable/button_shape_two"
+        android:text="My Center"
+        android:textColor="#3A5FCD"
+        android:gravity="center_horizontal"
+    />
+</LinearLayout>

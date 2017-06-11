@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0ffff"
+    android:orientation="vertical">
+
+    <com.example.elaine.participatorysensingproject_android.Layout.TitleLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"></com.example.elaine.participatorysensingproject_android.Layout.TitleLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/pic"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp"
+            android:text="空气质量指数"
+            android:textColor="#D9D91914"
+            android:textSize="35dip" />
+
+        <TextView
+            android:id="@+id/fpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"
+            android:text="PM_VALUE"
+            android:textColor="#D9D91914"
+            android:textSize="35dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/actfpm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:text="PM_VALUE"
+            android:textColor="#D9D91914"
+            android:textSize="35dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="400dp"
+            android:text="Time"
+            android:textColor="#D9D91914"
+            android:textSize="35dip" />
+
+    </FrameLayout>
+
+    <com.example.elaine.participatorysensingproject_android.Layout.MenuLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"></com.example.elaine.participatorysensingproject_android.Layout.MenuLayout>"
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="aqi_Excellent">#00E400</color>
+    <color name="aqi_Good">#FFFF00</color>
+    <color name="aqi_LightlyPolluted">#FF7E00</color>
+    <color name="aqi_ModeratelyPolluted">#FF0000</color>
+    <color name="aqi_HeavilyPolluted">#99004C</color>
+    <color name="aqi_SeverelyPolluted">#7E0023</color>
+    <color name="black_ivory">#292421</color>
+    <color name="gray">#C0C0C0</color>
+    <color name="coldGray">#808A87</color>
+    <color name="alpha_layer">#F2F2F2</color>
+    <color name="myue">#ff33b5e5</color>
+    <color name="weather_icon">#324C71</color>
+    <color name="icon_text_normal">#a9b7b7</color>
+    <color name="icon_text_selected">#324C71</color>
+    <color name="diy_dialog_photowall">#303F9F</color>
+    <color name="none_color">#00000000</color>
+    <color name="bule_overlay">#660D92DD</color>
+</resources>

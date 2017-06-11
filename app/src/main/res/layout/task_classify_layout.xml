@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="?android:attr/buttonBarButtonStyle"
+    android:orientation="horizontal"
+    android:gravity="center_horizontal">
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="所有任务"
+        android:textSize="12dp"
+        android:layout_gravity="top"
+        android:background="#BDBDBD"
+        android:textStyle="bold"
+        android:textColor="#FCFCFC"/>
+
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="按时间排序"
+        android:textSize="12dp"
+        android:layout_gravity="top"
+        android:background="#BDBDBD"
+        android:textStyle="bold"
+        android:textColor="#FCFCFC"/>
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="按距离排序"
+        android:textSize="12dp"
+        android:layout_gravity="top"
+        android:background="#BDBDBD"
+        android:textStyle="bold"
+        android:textColor="#FCFCFC"/>
+    
+
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="按数量排序"
+        android:textSize="12dp"
+        android:layout_gravity="top"
+        android:background="#BDBDBD"
+        android:textStyle="bold"
+        android:textColor="#FCFCFC"/>
+    
+</LinearLayout>
